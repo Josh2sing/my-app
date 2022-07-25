@@ -1,0 +1,255 @@
+body{
+  font-family: 'Raleway';
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+h5{
+  font-size: 25px;
+}
+.App {
+  text-align: center;
+  font-family: 'Raleway';
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(0, 0, 0);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(16px);
+  color: white;
+}
+
+.App-header .header{
+  display: flex;
+  justify-content: space-evenly;
+  gap:60%;
+  height: 100%;
+  width: 100%;
+}
+.App-header .header .container:first-child{
+  width: 275px;
+  text-align: left;
+}
+.App-header .header .container:first-child a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap:10px;
+}
+.App-header .header .container:first-child a h5{
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.App-header .header .container:first-child .profile{
+  background-color: #ff49a4;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.App-header .header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+}
+.App-header a{
+  color: #FFFFFF;
+    text-decoration: none;
+}
+.App-header a:hover{
+  color: rgb(141, 141, 255);
+  transition:color 300ms
+}
+/*=======================================================================================*/
+
+.App-body h1{
+    font-size: 5vw;
+    text-align: left;
+    margin: 0px;
+}
+.App-body .hero .container{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.App-body .hero .title-wrapper{
+  width: 40%;
+  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App-body .hero .title-wrapper p{
+  text-align: left;
+}
+.App-body .hero button{
+  background-color: white;
+  border: black 2px solid;
+  padding:1rem;
+  width:300px;
+  border-radius: 10px;
+  font-size:15px;
+}
+.card{
+  height: 100%;
+  left: 50%;
+  top:0%;
+}
+.App-body .hero button:hover{
+  background-color: black;
+  color: white;
+  cursor:pointer;
+  transition: background-color 300ms;
+}
+.App-body .hero .title-wrapper p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.App-body .hero .logo-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App-body .hero .logo-wrapper img:hover{
+ width: 53px;
+}
+/*=======================================================================================*/
+.App-body .random-projects{
+  width: 100%;
+  background-color: #000000;
+  height:auto;
+}
+.App-body .random-projects .text-wrapper{
+  text-align: left;
+  width: 40%;
+}
+.App-body .random-projects .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+.App-body .random-projects .container h1{
+  color: white;
+  font-size: 2vw;
+  margin: 3rem;
+  letter-spacing: 2px;
+  
+}
+.App-body .random-projects .project{
+  background-color:white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height:300px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.App-body .random-projects .project img{
+  height: 90%;
+}
+.App-body .random-projects .project:hover img{
+  transform: scale(1.1);
+  transition: transform 400ms;
+}
+.App-body .random-projects .row{
+  width: 100%;
+  justify-content: center;
+  gap:2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+/*=========================================================================*/
+
+.contact{
+  height:auto;
+  background-color: #222222;
+}
+.contact h1{
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 2rem;
+}
+.contact .container{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.contact input{
+  padding-left: 1rem;
+  font-family: 'Raleway';
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  outline: none;
+  border: white 2px solid;
+  background:white;
+  color: black;
+}
+.contact textarea{
+  padding:1rem;
+  font-family: 'Raleway';
+  height: 65px;
+  width: 250px;
+  border-radius: 5px;
+  border: white 2px solid;
+  background:white;
+  outline: none;
+  color: black;
+}
+.contact .container .col{
+  height: calc(65px + 2rem);
+  justify-content: space-between;
+}
+.contact .row {
+  gap:20px;
+}
+
+.contact form button{
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  font-family: 'Raleway';
+  font-weight: 600;
+  width: 200px;
+  border: green 2px solid;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.contact form button:hover{
+  transition: background-color 300ms;
+  background-color: white;
+  color: black;
+  border: none;
+}
+/*=======================================================================================*/
+
+.App-link {
+  color: #61dafb;
+}
+
