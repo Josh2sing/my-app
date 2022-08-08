@@ -4,10 +4,6 @@ import head from './Coponents/head'
 import instagram from './assets/Instagram.png'
 import Github from './assets/GitHub.png'
 import LinkedIn from './assets/LinkedIn.png'
-import poster1 from './assets/posters/39.png'
-import poster2 from './assets/posters/90.png'
-import poster3 from './assets/posters/242.png'
-import poster4 from './assets/posters/184.png'
 import vtf1 from './assets/vtf/home.PNG'
 import vtf2 from './assets/vtf/info.PNG'
 
@@ -44,17 +40,6 @@ function App() {
         <section className='random-projects' id='projects'>
           <div className='container'>
             <h1><strong>PROJECTS</strong></h1>
-            <div className='row'> <div className='project'>
-              <div className='text-wrapper'>
-                <h3>Poster 39</h3>
-                <p>Poster created using Photoshop and Illustrator</p>
-              </div>
-              <img src={poster1}></img>
-            </div>
-              <div className='project'> <div className='text-wrapper'>
-                <h3>Poster 90</h3>
-                <p>Poster created using Photoshop and Illustrator</p>
-              </div><img src={poster2}></img></div></div>
             <div className='row'>
               <div className='project full' style={{backgroundImage: `url(${vtf1})`}}> <div className='text-wrapper'>
                 <h3>VTF Info Page</h3>
