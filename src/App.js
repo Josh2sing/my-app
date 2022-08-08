@@ -26,7 +26,7 @@ function App() {
             <div className="title-wrapper">
               <h1>Joshua Singontiko</h1>
               <p>Fullstack Developer | Designer</p>
-              <button><a>Contact Me</a></button>
+              <button><a href='#contact'>Contact Me</a></button>
             </div>
             <div className="logo-wrapper">
               <a href='https://www.instagram.com/jsing.post/' target={'_blank'}><img src={instagram}></img></a>
