@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import head from './Coponents/head'
 import instagram from './assets/Instagram.png'
 import Github from './assets/GitHub.png'
 import LinkedIn from './assets/LinkedIn.png'
@@ -62,7 +60,7 @@ function App() {
               </div></div></div>
           </div>
         </section>
-        <section className='contact' id='contact'>
+        <section className='contact' id='contact' netlify>
           <h1>Say Hello!</h1>
          <div className='container'>
             <form>
