@@ -143,7 +143,45 @@ h5{
 }
 .App-body .random-projects .text-wrapper{
   text-align: left;
-  width: 40%;
+  padding:0rem 0rem 0rem 2rem;
+  background-color: rgb(255, 255,255, 0.95);
+  border-radius: 5px;
+  width: 80%;
+  height: 200px;
+}
+.App-body .random-projects .text-wrapper .button-container{
+  display: flex;
+  gap:1rem;
+  padding-right: 2rem;
+  justify-content: center;
+}
+.App-body .random-projects .projectlink{
+  background-color: #87b3d9;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-body .random-projects .projectlink:hover{
+  background-color: #000000;
+  transition: background-color 300ms;
+}
+.App-body .random-projects  a:link{
+  text-decoration: none;
+}
+
+.App-body .random-projects .projectlink p{
+  color: white;
+}
+.App-body .random-projects .text-wrapper button:hover{
+  background-color: black;
+  color: white;
+  transition: background-color 300ms;
 }
 .App-body .random-projects .container{
   width: 100%;
@@ -168,6 +206,10 @@ h5{
   width: 600px;
   overflow: hidden;
   border-radius: 10px;
+  
+}
+.full{
+  background-size: 100%;
 }
 .App-body .random-projects .project img{
   height: 90%;

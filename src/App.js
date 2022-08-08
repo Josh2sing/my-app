@@ -8,13 +8,8 @@ import poster1 from './assets/posters/39.png'
 import poster2 from './assets/posters/90.png'
 import poster3 from './assets/posters/242.png'
 import poster4 from './assets/posters/184.png'
-
-let card = document.querySelector(".card");
-
-window.addEventListener("scroll", () => {
-  var top = window.pageYOffset / 10;
-  card.style.transform = 'rotate3d(0,0,0 ' + top + 'deg)';
-});
+import vtf1 from './assets/vtf/home.PNG'
+import vtf2 from './assets/vtf/info.PNG'
 
 function App() {
   return (
@@ -27,7 +22,7 @@ function App() {
           <div className='container'>
             <a href='#contact'><p>Contact</p></a>
             <a href='https://docs.google.com/document/d/e/2PACX-1vS4J8dxmxGPrPZN5pFLQFW4fb0kTp5Q6YdDbR0qiQmSyYp9wRwkCg4KBlGFQ__zUzwGSWyBPOVmfvTb/pub' target='_blank'><p>Resume</p></a>
-            <a><p>Portfolio</p></a>
+            <a href='#projects'><p>Portfolio</p></a>
           </div>
         </section>
       </header>
@@ -46,7 +41,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className='random-projects'>
+        <section className='random-projects' id='projects'>
           <div className='container'>
             <h1><strong>PROJECTS</strong></h1>
             <div className='row'> <div className='project'>
@@ -61,14 +56,25 @@ function App() {
                 <p>Poster created using Photoshop and Illustrator</p>
               </div><img src={poster2}></img></div></div>
             <div className='row'>
-              <div className='project'> <div className='text-wrapper'>
-                <h3>Poster 242</h3>
-                <p>Poster created using Photoshop and Illustrator</p>
-              </div><img src={poster3}></img></div>
-              <div className='project'> <div className='text-wrapper'>
-                <h3>Poster 184</h3>
-                <p>Poster created using Photoshop and Illustrator</p>
-              </div><img src={poster4}></img></div></div>
+              <div className='project full' style={{backgroundImage: `url(${vtf1})`}}> <div className='text-wrapper'>
+                <h3>VTF Info Page</h3>
+                <p>Webpage re-styled using HTML/CSS</p>
+                <div className='button-container'>
+                  <a target='_blank' href='https://virtuallytestingfoundation.org/'><div className='projectlink'><p>LIVE</p></div></a>
+                  <a target='_blank' href='https://github.com/Josh2sing/VTF-Landing-Page'><div className='projectlink'><p>CODE</p></div></a>
+              </div>
+              </div>
+              
+              </div>
+              
+              <div className='project full' style={{backgroundImage: `url(${vtf2})`}}> <div className='text-wrapper'>
+                <h3>VTF Homepage</h3>
+                <p>Webpage created using HTML/CSS using Javascript for animation</p>
+                <div className='button-container'>
+                  <a target='_blank' href='https://virtuallytestingfoundation.org/internships'><div className='projectlink'><p>LIVE</p></div></a>
+                  <a target='_blank' href='https://github.com/Josh2sing/VTF-Landing-Page'><div className='projectlink'><p>CODE</p></div></a>
+              </div>
+              </div></div></div>
           </div>
         </section>
         <section className='contact' id='contact'>
